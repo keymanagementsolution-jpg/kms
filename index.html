@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<!--
+Template name: Nova
+Template author: FreeBootstrap.net
+Author website: https://freebootstrap.net/
+License: https://freebootstrap.net/license
+-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> kms &mdash;accountant </title>
+
+  <!-- ======= Google Font =======-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+  <!-- End Google Font-->
+
+  <!-- ======= Styles =======-->
+  <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendors/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/vendors/glightbox/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendors/aos/aos.css" rel="stylesheet">
+  <!-- End Styles-->
+
+  <!-- ======= Theme Style =======-->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- End Theme Style-->
+
+  <!-- ======= Apply theme =======-->
+  <script>
+    // Apply the theme as early as possible to avoid flicker
+    (function () {
+      const storedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-bs-theme', storedTheme);
+    })();
+  </script>
+</head>
+
+<body>
+
+
+  <!-- ======= Site Wrap =======-->
+  <div class="site-wrap">
+
+
+    <!-- ======= Header =======-->
+    <header class="fbs__net-navbar navbar navbar-expand-lg dark" aria-label="freebootstrap.net navbar">
+      <div class="container d-flex align-items-center justify-content-between">
+
+
+        <!-- Start Logo-->
+        <a class="navbar-brand w-auto" href="index.html">
+          <!-- If you use a text logo, uncomment this if it is commented-->
+          <!-- Vertex-->
+
+          <!-- If you plan to use an image logo, uncomment this if it is commented-->
+
+          <!-- logo dark--><img class="logo dark img-fluid" src="assets/images/logo-dark.svg"
+            alt="FreeBootstrap.net image placeholder">
+
+          <!-- logo light--><img class="logo light img-fluid" src="assets/images/logo-light.svg"
+            alt="FreeBootstrap.net image placeholder">
+
+        </a>
+        <!-- End Logo-->
+
+        <!-- Start offcanvas-->
+        <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1"
+          aria-labelledby="fbs__net-navbarsLabel">
+
+
+          <div class="offcanvas-header">
+            <div class="offcanvas-header-logo">
+              <!-- If you use a text logo, uncomment this if it is commented-->
+
+              <!-- h5#fbs__net-navbarsLabel.offcanvas-title Vertex-->
+
+              <!-- If you plan to use an image logo, uncomment this if it is commented-->
+              <a class="logo-link" id="fbs__net-navbarsLabel" href="index.html">
+
+
+                <!-- logo dark--><img class="logo dark img-fluid" src="assets/images/logo-dark.svg"
+                  alt="FreeBootstrap.net image placeholder">
+
+                <!-- logo light--><img class="logo light img-fluid" src="assets/images/logo-light.svg"
+                  alt="FreeBootstrap.net image placeholder"></a>
+
+            </div>
+            <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body align-items-lg-center">
+
+
+            <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link scroll-link active" aria-current="page" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link scroll-link" href="#about">About</a></li>
+
+              <li class="nav-item"><a class="nav-link scroll-link" href="#how-it-works">How It Works</a></li>
+              <li class="nav-item"><a class="nav-link scroll-link" href="#services">Services</a></li>
+
+              <li class="nav-item"><a class="nav-link scroll-link" href="#contact">Contact</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <!-- End offcanvas-->
+
+        <div class="ms-auto w-auto">
+
+
+          <div class="header-social d-flex align-items-center gap-1"><a class="btn btn-primary py-2" href="#">Get
+              Started</a>
+
+            <button class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto"
+              data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars" aria-controls="fbs__net-navbars"
+              aria-label="Toggle navigation" aria-expanded="false">
+              <svg class="fbs__net-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="21" x2="3" y1="6" y2="6"></line>
+                <line x1="15" x2="3" y1="12" y2="12"></line>
+                <line x1="17" x2="3" y1="18" y2="18"></line>
+              </svg>
+              <svg class="fbs__net-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M18 6 6 18"></path>
+                <path d="m6 6 12 12"></path>
+              </svg>
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+    </header>
+    <!-- End Header-->
+
+    <!-- ======= Main =======-->
+    <main>
+
+
+      <!-- ======= Hero =======-->
+      <section class="hero__v6 section" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <div class="row">
+                <div class="col-lg-11"><span class="hero-subtitle text-uppercase" data-aos="fade-up"
+                    data-aos-delay="0">Innovative Fintech Solutions</span>
+                  <h1 class="hero-title mb-3" data-aos="fade-up" data-aos-delay="100">Your Trusted Partner in Key
+                    Management, Accounting & Housing Society Solutions</h1>
+                  <p class="hero-description mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="200">Seamless services for
+                    Accounting, Housing Society Formation, and Key Management Solutions – ensuring transparency,
+                    efficiency, and growth for your organization..</p>
+                  <div class="cta d-flex gap-2 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="300"><a class="btn"
+                      href="#">Get Started Now</a><a class="btn btn-white-outline" href="#">Learn More
+                      <svg class="lucide lucide-arrow-up-right" xmlns="http://www.w3.org/2000/svg" width="18"
+                        height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 7h10v10"></path>
+                        <path d="M7 17 17 7"></path>
+                      </svg></a></div>
+                  <!-- <div class="logos mb-4" data-aos="fade-up" data-aos-delay="400"><span class="logos-title text-uppercase mb-4 d-block">Trusted by major companies worldwide</span>
+                      <div class="logos-images d-flex gap-4 align-items-center"><img class="img-fluid js-img-to-inline-svg" src="assets/images/logo/actual-size/logo-air-bnb__black.svg" alt="Company 1" style="width: 110px;"><img class="img-fluid js-img-to-inline-svg" src="assets/images/logo/actual-size/logo-ibm__black.svg" alt="Company 2" style="width: 80px;"><img class="img-fluid js-img-to-inline-svg" src="assets/images/logo/actual-size/logo-google__black.svg" alt="Company 3" style="width: 110px;"></div>
+                    </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-img">
+                <img class="img-card img-fluid" src="assets/banner2.jpg"alt="Image card" data-aos="fade-down" data-aos-delay="600">
+                  <img class="img-main img-fluid rounded-4"
+                  src="assets/banner1.jpg" alt="Hero Image" data-aos="fade-in" data-aos-delay="500">
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero-->
+      </section>
+      <!-- End Hero-->
+
+      <!-- ======= About =======-->
+      <section class="about__v4 section" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 order-md-2">
+              <div class="row justify-content-end">
+                <div class="col-md-11 mb-4 mb-md-0"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
+                    data-aos-delay="0">About us</span>
+                  <h2 class="mb-4" data-aos="fade-up" data-aos-delay="100">
+                    Your Trusted Partner in Key Management, Accounting & Housing Society Solutions</h2>
+                  <div data-aos="fade-up" data-aos-delay="200">
+                    <p>At Key Management Solutions, we are your trusted partner in Accounting, Key Management, and
+                      Housing Society Formation Services.
+                      Our goal is to provide seamless, secure, and efficient solutions that ensure transparency and
+                      empower organizations and communities.</p>
+                    <p>We are committed to simplifying complex processes with expertise, innovation, and trust — helping
+                      you focus on growth while we take care of the management.</p>
+                  </div>
+                  <h4 class="small fw-bold mt-4 mb-3" data-aos="fade-up" data-aos-delay="300">Key Values and Vision</h4>
+                  <ul class="d-flex flex-row flex-wrap list-unstyled gap-3 features" data-aos="fade-up"
+                    data-aos-delay="400">
+                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                          class="bi bi-check"></i></span><span class="text">Innovation</span></li>
+                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                          class="bi bi-check"></i></span><span class="text">Security</span></li>
+                    <!-- <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i class="bi bi-check"></i></span><span class="text">User-Centric Design </span></li> -->
+                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                          class="bi bi-check"></i></span><span class="text">Transparency</span></li>
+                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                          class="bi bi-check"></i></span><span class="text">Empowerment</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="img-wrap position-relative"><img class="img-fluid rounded-4"
+                  src="assets/17765.jpg" alt="FreeBootstrap.net image placeholder" data-aos="fade-up"
+                  data-aos-delay="0">
+                <div class="mission-statement p-4 rounded-4 d-flex gap-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="mission-icon text-center rounded-circle"><i class="bi bi-lightbulb fs-4"></i></div>
+                  <div>
+                    <h3 class="text-uppercase fw-bold">Mission Statement</h3>
+                    <p class="fs-5 mb-0">At Key Management Solutions, our mission is to empower individuals, housing
+                      societies, and businesses by delivering secure, efficient, and user-friendly management and
+                      financial services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About-->
+
+      <!-- ======= Features =======-->
+      <section class="section features__v2" id="features">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="d-lg-flex p-5 rounded-4 content" data-aos="fade-in" data-aos-delay="0">
+                <div class="row">
+                  <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="0">
+                    <div class="row">
+                      <div class="col-lg-11">
+                        <div class="h-100 flex-column justify-content-between d-flex">
+                          <div>
+                            <h2 class="mb-4">Why Choose us</h2>
+                            <p class="mb-5">Experience the future of management and financial services with Key
+                              Management Solutions.
+                              Our secure, efficient, and user-friendly approach ensures that your accounting, housing
+                              society, and key management needs are handled with transparency and ease.
+                              We empower you to take control of your financial and management journey with confidence
+                              and convenience</p>
+                          </div>
+                          <!-- <div class="align-self-start"><a class="glightbox btn btn-play d-inline-flex align-items-center gap-2" href="https://www.youtube.com/watch?v=DQx96G4yHd8" data-gallery="video"><i class="bi bi-play-fill"></i> Watch the Video</a></div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-7">
+                    <div class="row justify-content-end">
+                      <div class="col-lg-11">
+                        <div class="row">
+                          <div class="col-sm-6" data-aos="fade-up" data-aos-delay="0">
+                            <div class="icon text-center mb-4"><i class="bi bi-person-check fs-4"></i></div>
+                            <h3 class="fs-6 fw-bold mb-3">User-Friendly Interface</h3>
+                            <p>Simple navigation with a responsive design that works seamlessly across all devices..</p>
+                          </div>
+                          <div class="col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="icon text-center mb-4"><i class="bi bi-graph-up fs-4"></i></div>
+                            <h3 class="fs-6 fw-bold mb-3">Financial Analytics</h3>
+                            <p>Advanced tools for budget tracking, expense categorization, and personalized insights to
+                              help you make smarter decisions.</p>
+                          </div>
+                          <div class="col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="icon text-center mb-4"><i class="bi bi-headset fs-4"></i></div>
+                            <h3 class="fs-6 fw-bold mb-3">Customer Support</h3>
+                            <p>Dedicated 24/7 assistance through chat, email, phone, and a comprehensive help center.
+                            </p>
+                          </div>
+                          <div class="col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="icon text-center mb-4"><i class="bi bi-shield-lock fs-4"></i></div>
+                            <h3 class="fs-6 fw-bold mb-3">Transparency & Trust</h3>
+                            <p>Clear records, accurate reports, and accountable processes for societies and businesses.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Features-->
+
+      <!-- ======= Pricing =======-->
+
+      <!-- End Pricing-->
+
+      <!-- ======= How it works =======-->
+      <section class="section howitworks__v1" id="how-it-works">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-6 text-center mx-auto">
+              <span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">How it works</span>
+              <h2 data-aos="fade-up" data-aos-delay="100">How It Works</h2>
+              <p data-aos="fade-up" data-aos-delay="200">
+                Managing your housing society or apartment accounts has never been easier. Follow these simple steps to
+                get started with <strong>Key Management Solution</strong>.
+              </p>
+            </div>
+          </div>
+          <div class="row g-md-5">
+            <div class="col-md-6 col-lg-3">
+              <div class="step-card text-center h-100 d-flex flex-column justify-content-start position-relative"
+                data-aos="fade-up" data-aos-delay="0">
+                <div data-aos="fade-right" data-aos-delay="500">
+                  <img class="arch-line" src="assets/images/arch-line.svg" alt="step-1">
+                </div>
+                <span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">1</span>
+                <div>
+                  <h3 class="fs-5 mb-4">Get in Touch</h3>
+                  <p>Reach out to us via call or email to discuss your society or apartment management needs.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+              <div
+                class="step-card reverse text-center h-100 d-flex flex-column justify-content-start position-relative">
+                <div data-aos="fade-right" data-aos-delay="1100">
+                  <img class="arch-line reverse" src="assets/images/arch-line-reverse.svg" alt="step-2">
+                </div>
+                <span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">2</span>
+                <h3 class="fs-5 mb-4">Set Up Your Account</h3>
+                <p>We create a dedicated account for your society where all financial and billing records are maintained
+                  securely.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="1200">
+              <div class="step-card text-center h-100 d-flex flex-column justify-content-start position-relative">
+                <div data-aos="fade-right" data-aos-delay="1700">
+                  <img class="arch-line" src="assets/images/arch-line.svg" alt="step-3">
+                </div>
+                <span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">3</span>
+                <h3 class="fs-5 mb-4">Provide Your Details</h3>
+                <p>Share member information, maintenance charges, and other relevant data with our team for a smooth
+                  setup.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="1800">
+              <div class="step-card last text-center h-100 d-flex flex-column justify-content-start position-relative">
+                <span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">4</span>
+                <div>
+                  <h3 class="fs-5 mb-4">Start Managing Effortlessly</h3>
+                  <p>We take care of billing, accounting, and record-keeping—while you focus on smooth society
+                    operations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- End How it works-->
+
+      <!-- ======= Stats =======-->
+      <section class="stats__v3 section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="d-flex flex-wrap content rounded-4" data-aos="fade-up" data-aos-delay="0">
+                <div class="rounded-borders">
+                  <div class="rounded-border-1"></div>
+                  <div class="rounded-border-2"></div>
+                  <div class="rounded-border-3"></div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="100">
+                  <div class="stat-item">
+                    <h3 class="fs-1 fw-bold"><span class="purecounter" data-purecounter-start="0"
+                        data-purecounter-end="10" data-purecounter-duration="2">0</span><span>K+</span></h3>
+                    <p class="mb-0">Customer Satisfaction</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="200">
+                  <div class="stat-item">
+                    <h3 class="fs-1 fw-bold"> <span class="purecounter" data-purecounter-start="0"
+                        data-purecounter-end="200" data-purecounter-duration="2">0</span><span>%+</span></h3>
+                    <p class="mb-0">Revenue Increase</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="300">
+                  <div class="stat-item">
+                    <h3 class="fs-1 fw-bold"><span class="purecounter" data-purecounter-start="0"
+                        data-purecounter-end="20" data-purecounter-duration="2">0</span><span>x</span></h3>
+                    <p class="mb-0">Business Growth</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Stats-->
+
+      <!-- ======= Services =======-->
+      <section class="section services__v3" id="services">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-8 mx-auto text-center">
+              <span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">Our Services</span>
+              <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">
+                Comprehensive Solutions for Societies & Businesses
+              </h2>
+            </div>
+          </div>
+          <div class="row g-4">
+
+            <!-- Accounting & Compliance Services -->
+            <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="0">
+              <div class="service-card p-4 rounded-4 h-100">
+                <span class="icon mb-4"><i class="bi bi-calculator fs-1"></i></span>
+                <h3 class="fs-5 mb-3">Accounting & Compliance Services</h3>
+                <ul class=" d-flex flex-column gap-2">
+                  <li>GST Registration</li>
+                  <li>GST Return Filing</li>
+                  <li>TDS Return Filing</li>
+                  <li>Maintenance billing & receipt generation</li>
+                  <li>Automated accounting & expense tracking</li>
+                  <li>Custom financial reports & audits</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Housing Society Management -->
+            <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-card p-4 rounded-4 h-100">
+                <span class="icon mb-4"><i class="bi bi-building fs-1"></i></span>
+                <h3 class="fs-5 mb-3">Housing Society Management</h3>
+                <ul class=" d-flex flex-column gap-2">
+                  <li>Society Formation & Registration</li>
+                  <li>Legal compliance & documentation</li>
+                  <li>Member database & records management</li>
+                  <li>Digital notices, communication & document storage</li>
+                  <li>Efficient financial management for societies</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Key Management Solutions -->
+            <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-card p-4 rounded-4 h-100">
+                <span class="icon mb-4"><i class="bi bi-key fs-1"></i></span>
+                <h3 class="fs-5 mb-3">Key Management Solutions</h3>
+                <ul class=" d-flex flex-column gap-2">
+                  <li>Secure key handling system</li>
+                  <li>Digital record keeping</li>
+                  <li>Easy tracking & access management</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Support & Assistance -->
+            <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-card p-4 rounded-4 h-100">
+                <span class="icon mb-4"><i class="bi bi-headset fs-1"></i></span>
+                <h3 class="fs-5 mb-3">Support & Assistance</h3>
+                <ul class="d-flex flex-column gap-2">
+                  <li>24/7 customer support</li>
+                  <li>Training & onboarding assistance</li>
+                  <li>Tailored solutions for every society & business</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Services-->
+
+
+      <!-- ======= FAQ =======-->
+      <!-- <section class="section faq__v2" id="faq">
+          <div class="container">
+            <div class="row mb-4">
+              <div class="col-md-6 col-lg-7 mx-auto text-center"><span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">FAQ</span>
+                <h2 class="h2 fw-bold mb-3" data-aos="fade-up" data-aos-delay="0">Frequently Asked Questions</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Utilize our tools to develop your concepts and bring your vision to life. Once complete, effortlessly share your creations.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8 mx-auto" data-aos="fade-up" data-aos-delay="200">
+                <div class="faq-content">
+                  <div class="accordion custom-accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne"> What services does your web agency offer? </button>
+                      </h2>
+                      <div class="accordion-collapse collapse show" id="panelsStayOpen-collapseOne">
+                        <div class="accordion-body">Our web agency offers a comprehensive range of services including web design and development, e-commerce solutions, SEO optimization, content creation, website maintenance, and digital marketing strategies. We tailor our services to meet the unique needs of each client, ensuring a customized approach to every project.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo"> How much does it cost to build a website? </button>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="panelsStayOpen-collapseTwo">
+                        <div class="accordion-body">The cost of building a website can vary widely depending on the complexity, features, and specific requirements of your project. We offer several pricing packages to accommodate different budgets and needs. After an initial consultation, we can provide a detailed quote based on your specific goals and objectives.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree"> How long does it take to design and develop a website? </button>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="panelsStayOpen-collapseThree">
+                        <div class="accordion-body">The timeline for designing and developing a website depends on the project&apos;s complexity and scope. Typically, a standard business website takes about 4-6 weeks to complete, while more complex projects like e-commerce sites or custom applications may take longer. We work closely with our clients to establish a realistic timeline and keep you informed throughout the process.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour"> Will my website be mobile-friendly? </button>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="panelsStayOpen-collapseFour">
+                        <div class="accordion-body">Absolutely! All the websites we design and develop are fully responsive, meaning they are optimized to work seamlessly across all devices, including desktops, tablets, and smartphones. Ensuring a great user experience on mobile devices is a top priority in our development process.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive"> Do you provide ongoing support and maintenance for websites? </button>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="panelsStayOpen-collapseFive">
+                        <div class="accordion-body">Yes, we offer ongoing support and maintenance services to ensure your website remains up-to-date, secure, and functioning smoothly. Our maintenance packages can include regular updates, security monitoring, backups, and technical support to address any issues that may arise. We&apos;re here to help you keep your website running efficiently long after it&apos;s launched.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </section> -->
+      <!-- End FAQ-->
+
+      <!-- ======= Contact =======-->
+      <section class="section contact__v2" id="contact">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-6 col-lg-7 mx-auto text-center">
+              <span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">Contact</span>
+              <h2 class="h2 fw-bold mb-3" data-aos="fade-up" data-aos-delay="0">Contact Us</h2>
+              <p data-aos="fade-up" data-aos-delay="100">
+                Get in touch with <strong>Key Management Solution</strong> for seamless support in
+                <strong>Co-operative Housing Societies & Apartments</strong>.
+                We are here to assist you with all your management and accounting needs.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+
+            <!-- Contact Info -->
+            <div class="col-md-6">
+              <div class="d-flex gap-5 flex-column">
+                <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="0">
+                  <div class="icon d-block"><i class="bi bi-telephone"></i></div>
+                  <span>
+                    <span class="d-block fw-bold">Call Us</span>
+                    <strong>+91 73048 23908</strong><br>
+                    <strong>+91 86687 69025</strong>
+                  </span>
+                </div>
+                <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="100">
+                  <div class="icon d-block"><i class="bi bi-send"></i></div>
+                  <span>
+                    <span class="d-block fw-bold">Email</span>
+                    <strong>key.managementsolution@gmail.com</strong>
+                  </span>
+                </div>
+                <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon d-block"><i class="bi bi-geo-alt"></i></div>
+                  <span>
+                    <span class="d-block fw-bold">Address</span>
+                    <address class="fw-bold">
+                      Badlapur west <br>
+
+                    </address>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-md-6">
+              <div class="form-wrapper" data-aos="fade-up" data-aos-delay="300">
+                <form id="contactForm">
+                  <div class="row gap-3 mb-3">
+                    <div class="col-md-12">
+                      <label class="mb-2" for="name">Name</label>
+                      <input class="form-control" id="name" type="text" name="name" required>
+                    </div>
+                    <div class="col-md-12">
+                      <label class="mb-2" for="email">Email</label>
+                      <input class="form-control" id="email" type="email" name="email" required>
+                    </div>
+                  </div>
+                  <div class="row gap-3 mb-3">
+                    <div class="col-md-12">
+                      <label class="mb-2" for="subject">Subject</label>
+                      <input class="form-control" id="subject" type="text" name="subject">
+                    </div>
+                  </div>
+                  <div class="row gap-3 gap-md-0 mb-3">
+                    <div class="col-md-12">
+                      <label class="mb-2" for="message">Message</label>
+                      <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary fw-semibold" type="submit">Send Message</button>
+                </form>
+                <div class="mt-3 d-none alert alert-success" id="successMessage">Message sent successfully!</div>
+                <div class="mt-3 d-none alert alert-danger" id="errorMessage">Message sending failed. Please try again
+                  later.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- End Contact-->
+
+      <!-- ======= Footer =======-->
+      <footer class="footer pt-5 pb-5">
+        <div class="container">
+          <div class="row mb-5 pb-4">
+            <div class="col-md-7">
+              <h2 class="fs-5">Stay Connected</h2>
+              <p>Stay updated with our latest services, updates, and announcements—subscribe to our newsletter today!
+              </p>
+            </div>
+            <div class="col-md-5">
+              <form class="d-flex gap-2">
+                <input class="form-control" type="email" placeholder="Enter your email" required="">
+                <button class="btn btn-primary fs-6" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="row justify-content-between mb-5 g-xl-5">
+            <div class="col-md-4 mb-5 mb-lg-0">
+              <h3 class="mb-3">About Us</h3>
+              <p class="mb-4">
+                Key Management Solution provides professional accounting, billing, and financial services
+                for <strong>Co-operative Housing Societies & Apartments</strong>.
+                Our mission is to simplify management with reliable and transparent solutions.
+              </p>
+            </div>
+
+            <div class="col-md-7">
+              <div class="row g-2">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                  <h3 class="mb-3">Our Services</h3>
+                  <ul class="list-unstyled">
+                    <li>Accounting & Auditing</li>
+                    <li>Maintenance Billing</li>
+                    <li>Society & Apartment Management</li>
+                    <li>Consultancy for Housing Societies</li>
+                    <li>Digital Payment Solutions</li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                  <h3 class="mb-3">Quick Links</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 quick-contact">
+                  <h3 class="mb-3">Contact</h3>
+                  <p class="d-flex mb-3">
+                    <i class="bi bi-geo-alt-fill me-3"></i>
+                    <span>Mumbai, Maharashtra, India</span>
+                  </p>
+                  <a class="d-flex mb-3" href="mailto:key.managementsolution@gmail.com">
+                    <i class="bi bi-envelope-fill me-3"></i>
+                    <span>key.managementsolution@gmail.com</span>
+                  </a>
+                  <a class="d-flex mb-3" href="tel://+917304823908">
+                    <i class="bi bi-telephone-fill me-3"></i>
+                    <span>+91 73048 23908</span>
+                  </a>
+                  <a class="d-flex mb-3" href="tel://+918668769025">
+                    <i class="bi bi-telephone-fill me-3"></i>
+                    <span>+91 86687 69025</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row credits pt-3">
+            <div class="col-xl-8 text-center text-xl-start mb-3 mb-xl-0">
+              &copy;
+              <script>document.write(new Date().getFullYear());</script>
+              Key Management Solution. All Rights Reserved.
+            </div>
+            <div
+              class="col-xl-4 justify-content-start justify-content-xl-end quick-links d-flex flex-column flex-xl-row text-center text-xl-start gap-1">
+              Designed with <i class="bi bi-heart-fill text-danger"></i> by Key Management Solution
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- End Footer-->
+
+    </main>
+  </div>
+
+  <!-- ======= Back to Top =======-->
+  <button id="back-to-top"><i class="bi bi-arrow-up-short"></i></button>
+  <!-- End Back to top-->
+
+  <!-- ======= Javascripts =======-->
+  <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendors/gsap/gsap.min.js"></script>
+  <script src="assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
+  <script src="assets/vendors/glightbox/glightbox.min.js"></script>
+  <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendors/aos/aos.js"></script>
+  <script src="assets/vendors/purecounter/purecounter.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/send_email.js"></script>
+  <!-- End JavaScripts-->
+</body>
+
+</html>
